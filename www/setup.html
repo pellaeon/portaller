@@ -155,6 +155,14 @@
             </div>
 
           <br><hr>
+          <h4 id="mac-manual">Mac OS X Manual</h4>
+          <p>If you're on MacOS and don't want to send all DNS queries to our server, but only geo-locked domains, you can <a href="https://apple.stackexchange.com/questions/74639/do-etc-resolver-files-work-in-mountain-lion-for-dns-resolution">set specific DNS resolver to use for each domain</a>, similar to dnsmasq on Linux detailed below.</p>
+            <li><code>$ sudo mkdir -p /etc/resolver/</code></li>
+            <li> Create a text file named after the domain you want to specify, for example <code>pandora.com</code>, the DNS settings will also be applied to its subdomains:
+            <code>$ sudo touch /etc/resolver/pandora.com</code></li>
+            <li> Inside the file put in Portaller DNS setting: <pre>nameserver 107.170.15.247</pre></li>
+
+          <br><hr>
           <h4 id="ps4">PlayStation 4</h4>
             <p><b>To install Netflix (Amazon, Hulu, etc.) application you need to log in to PSN using US or Canadian account.</b></p>
             <p><b>Application must be closed between switching regions, or it will not work.</b></p>
